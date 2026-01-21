@@ -12,3 +12,9 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+# Django
+*.log
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
