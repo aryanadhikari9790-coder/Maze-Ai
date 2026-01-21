@@ -1,0 +1,90 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+h1 { margin-bottom: 10px; }
+
+.controls {
+  margin-bottom: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.controls label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 14px;
+  background: #f6f6f6;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+.controls input, .controls select {
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.controls button {
+  padding: 7px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #f2f2f2;
+}
+
+#stats {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.grid {
+  display: grid;
+  gap: 2px;
+  margin-top: 10px;
+}
+
+.cell {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: #eee;
+}
+
+.wall { background: #333; }
+.start { background: #3b82f6; }
+.goal { background: #ef4444; }
+
+.visited {
+  background: #93c5fd;
+  transition: 0.05s;
+}
+
+.path {
+  background: #22c55e;
+  transition: 0.05s;
+}
+
+.compareBox{
+  margin-top: 14px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 560px;
+  background: #fafafa;
+}
+
+.compareRow{
+  display:flex;
+  justify-content:space-between;
+  padding:6px 0;
+  border-bottom: 1px dashed #ddd;
+  font-size: 14px;
+}
+
+.compareRow:last-child{ border-bottom:none; }

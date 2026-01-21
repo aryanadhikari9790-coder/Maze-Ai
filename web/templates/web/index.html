@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Maze Solver</title>
+  <link rel="stylesheet" href="/static/web/css/style.css" />
+</head>
+<body>
+  <h1>AI Maze Solver</h1>
+
+  <div class="controls">
+    <label>Rows:
+      <input id="rows" type="number" min="5" max="60" value="20">
+    </label>
+
+    <label>Cols:
+      <input id="cols" type="number" min="5" max="80" value="25">
+    </label>
+
+    <label>Wall %:
+      <input id="density" type="number" min="5" max="45" value="28">
+    </label>
+
+    <select id="algo">
+      <option value="bfs">BFS</option>
+      <option value="dfs">DFS</option>
+      <option value="dijkstra">Dijkstra</option>
+      <option value="astar" selected>A*</option>
+    </select>
+
+    <button id="generate">Generate Maze</button>
+    <button id="solve">Solve</button>
+    <button id="compare">Compare All</button>
+    <button id="reset">Reset</button>
+  </div>
+
+  <p id="stats"></p>
+
+  <div id="grid" class="grid"></div>
+
+  <div id="compareBox" class="compareBox"></div>
+
+  <script src="/static/web/js/app.js"></script>
+</body>
+</html>
